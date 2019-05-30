@@ -1,5 +1,5 @@
 {
-  "name": "create-next-example-app",
+  "name": "simple-next-starter",
   "scripts": {
     "dev": "next",
     "build": "next build",
