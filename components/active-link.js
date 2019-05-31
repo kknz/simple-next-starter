@@ -1,17 +1,10 @@
 import { withRouter } from "next/router";
 import Link from "next/link";
+
 import css from "../styles/nav.scss";
 
-const ActiveLink = ({ children, router, href, linkClass = "" }) => {
+const ActiveLink = ({ children, router, href }) => {
   let className = router.pathname === href ? css.active : "";
-
-  if (linkClass != "") {
-    if (className != "") {
-      className = className + " " + linkClass;
-    } else {
-      className = linkClass;
-    }
-  }
 
   return (
     <Link href={href}>

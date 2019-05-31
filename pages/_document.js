@@ -15,6 +15,10 @@ export default class MyDocument extends Document {
             content="width=device-width, initial-scale=1, viewport-fit=cover"
           />
           <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto:400,500&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

@@ -1,11 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Layout from "../layout";
+import Header from "../components/headers/home";
 import container from "../styles/container.scss";
 import nav from "../styles/nav.scss";
 
 export default () => (
   <Layout className={nav.home}>
+    <Header />
     <main>
       <section>
         <div className={container.container}>

@@ -57,10 +57,10 @@ export default class extends Component {
                     <ActiveLink href="/">Home</ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink href="/services">Services</ActiveLink>
+                    <ActiveLink href="/page-one">Page One</ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink href="/portfolio">Portfolio</ActiveLink>
+                    <ActiveLink href="/page-two">Page Two</ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/contact">Contact</ActiveLink>

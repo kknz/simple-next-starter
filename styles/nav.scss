@@ -81,13 +81,13 @@ nav {
     float: left;
     padding: rem(0px 15px);
     margin: rem(0px 15px);
-    @media (min-width: 430px) and (max-width: 509px) {
+    @media (min-width: 400px) and (max-width: 539px) {
       padding: rem(0px 10px);
-      margin: rem(0px 10px);
+      margin: rem(0px 5px);
     }
-    @media (max-width: 429px) {
+    @media (max-width: 399px) {
       padding: rem(0px 5px);
-      margin: rem(0px 3px);
+      margin: rem(0px 1px);
     }
     a {
       padding: rem(8px 0px);
@@ -124,8 +124,4 @@ nav {
       }
     }
   }
-}
-
-.active {
-  color: red;
 }
