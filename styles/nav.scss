@@ -1,0 +1,131 @@
+@import "variables";
+@import "rem";
+
+nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  justify-content: flex-start;
+}
+
+.navbar_bg {
+  background-color: #fff;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  height: rem(72px);
+  align-items: center;
+  justify-content: space-between;
+  transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  .navbar_bg & {
+    height: rem(50px);
+  }
+}
+
+.logo_container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  color: #000;
+  display: block;
+
+  .home & {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    color: #000;
+    .navbar_bg & {
+      .home & {
+        color: #000;
+      }
+    }
+    .home & {
+      color: #fff;
+    }
+  }
+
+  .navbar_bg & {
+    color: #000;
+    svg {
+      width: rem(30px);
+    }
+  }
+
+  svg {
+    width: rem(40px);
+  }
+}
+
+.list {
+  margin: 0;
+  font-size: rem(12px);
+  @media (max-width: 518px) {
+    font-size: rem(11px);
+  }
+  list-style: none;
+  padding: 0;
+  li {
+    float: left;
+    padding: rem(0px 15px);
+    margin: rem(0px 15px);
+    @media (min-width: 430px) and (max-width: 509px) {
+      padding: rem(0px 10px);
+      margin: rem(0px 10px);
+    }
+    @media (max-width: 429px) {
+      padding: rem(0px 5px);
+      margin: rem(0px 3px);
+    }
+    a {
+      padding: rem(8px 0px);
+      text-transform: uppercase;
+      color: #000;
+      position: relative;
+      display: block;
+      font-weight: 600;
+      .navbar_bg & {
+        color: #000;
+      }
+      &:hover {
+        &:after {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: 5px;
+        height: 2px;
+        background-color: #000;
+        .navbar_bg & {
+          background-color: #000;
+        }
+        transform: translate(-65%);
+        opacity: 0;
+        transition: all 235ms;
+      }
+    }
+  }
+}
+
+.active {
+  color: red;
+}

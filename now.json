@@ -1,7 +1,10 @@
 {
-    "version": 2,
-    "name": "simple-next-starter",
-    "builds": [
-        { "src": "package.json", "use": "@now/next" }
-    ]
+  "version": 2,
+  "name": "simple-next-starter",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ]
 }
