@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../rem";
+
+.web_service {
+  svg {
+    width: rem(50px);
+    height: auto;
+  }
+}
+
+.web_service_name {
+  margin: rem(15px 0);
+  font-weight: bold;
+}
+
+.web_service_content {
+  font-size: rem(14px);
+  color: $text-secondary-color;
+  @media (max-width: 767px) {
+    margin-bottom: rem(50px);
+  }
+}

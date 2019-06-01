@@ -1,0 +1,35 @@
+@import "../variables";
+@import "../rem";
+
+.section_grey {
+  background-color: #f4f5f9;
+}
+
+.section_title {
+  font-size: rem(40px);
+  font-weight: 600;
+  color: $text-primary-color;
+  margin-top: 0;
+  margin-bottom: rem(10px);
+  line-height: rem(80px);
+  .section_tech_partner & {
+    text-align: center;
+  }
+}
+
+.space_bg {
+  height: rem(450px);
+  background-image: url("/static/images/space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.landed {
+  text-align: center;
+  margin-top: 30px;
+  img {
+    width: rem(550px);
+    max-width: 100%;
+  }
+}
