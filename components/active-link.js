@@ -1,7 +1,7 @@
 import { withRouter } from "next/router";
 import Link from "next/link";
 
-import css from "../styles/nav.scss";
+import css from "../styles/components/nav.scss";
 
 const ActiveLink = ({ children, router, href }) => {
   let className = router.pathname === href ? css.active : "";

@@ -1,0 +1,87 @@
+@import "../variables";
+@import "../rem";
+
+.services {
+  padding-top: rem(10px);
+  @media (max-width: 767px) {
+    padding-top: rem(70px);
+  }
+}
+
+.mockup {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 1287px;
+  left: 0;
+  transform: scale(0.5) rotate(-12deg) translateX(50px);
+  @media (max-width: 439px) {
+    margin-left: -320px;
+    bottom: 0;
+  }
+  @media (min-width: 440px) and (max-width: 767px) {
+    margin-left: -100px;
+    bottom: 100px;
+    transform: scale(0.8) rotate(-12deg) translateX(50px);
+  }
+
+  @media (min-width: 768px) {
+    top: 0;
+    transform: scale(0.7) rotate(-12deg) translateX(50px);
+    left: 10%;
+    transform-origin: 50% 20%;
+  }
+  @media (min-width: 992px) {
+    transform: scale(1) rotate(-12deg) translateX(50px);
+    left: 50%;
+    margin-left: -200px;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    background: #fff;
+    box-shadow: inset 0 4px 7px 1px #fff,
+      inset 0 -5px 20px rgba(173, 186, 204, 0.25),
+      0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05);
+  }
+}
+
+.section_portfolio {
+  height: rem(600px);
+  background-color: #f4f5f9;
+  @media (min-width: 440px) and (max-width: 767px) {
+    height: rem(900px);
+  }
+}
+
+.phone_small {
+  margin-top: 50px;
+  width: 225px;
+  height: 467px;
+  img {
+    width: rem(211px);
+    border: 3px solid #eff1f4;
+    border-radius: rem(5px);
+  }
+}
+
+.tablet_portrait {
+  order: 0;
+  width: 512px;
+  height: 352px;
+  margin: 50px 50px 0 0;
+  img {
+    width: rem(420px);
+    border: 3px solid #eff1f4;
+    border-radius: rem(5px);
+  }
+}
+
+.brands {
+  @media (max-width: 767px) {
+    padding: rem(30px 0);
+  }
+}

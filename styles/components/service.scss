@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../rem";
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: auto;
+  margin-bottom: rem(30px);
+}
+
+.service_icon {
+  width: rem(100px);
+  @media (max-width: 439px) {
+    width: rem(80px);
+    padding-right: rem(25px);
+  }
+  padding-left: 15px;
+  padding-right: rem(35px);
+  margin-top: rem(5px);
+  svg {
+    color: $light-blue;
+  }
+}
+
+.service_content {
+  width: calc(100% - 100px);
+  @media (max-width: 439px) {
+    width: calc(100% - 80px);
+  }
+  padding-left: 15px;
+  padding-right: 15px;
+  h4 {
+    margin-top: 0;
+    margin-bottom: rem(20px);
+  }
+  p {
+    font-size: rem(14px);
+    color: $text-secondary-color;
+  }
+}

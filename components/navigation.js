@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import ActiveLink from "./active-link";
 import container from "../styles/container.scss";
-import css from "../styles/nav.scss";
+import css from "../styles/components/nav.scss";
 import CandyLineal from "../static/svgs/candy-lineal.svg";
 
 export default class extends Component {

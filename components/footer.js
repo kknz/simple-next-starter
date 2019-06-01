@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import container from "../styles/container.scss";
-import css from "../styles/footer.scss";
+import css from "../styles/components/footer.scss";
 
 export default () => (
   <footer className={css.footer}>

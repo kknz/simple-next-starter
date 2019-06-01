@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../rem";
+
+.separator {
+  height: rem(3px);
+  width: rem(50px);
+  background-color: $secondary-color;
+}
+
+.center {
+  margin: 0 auto;
+}

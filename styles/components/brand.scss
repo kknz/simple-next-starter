@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../rem";
+
+.brand {
+  min-height: rem(130px);
+  @media (min-width: 768px) {
+    min-height: rem(200px);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+  &.react {
+    svg {
+      width: rem(190px);
+    }
+  }
+}
