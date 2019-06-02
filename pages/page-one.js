@@ -2,16 +2,26 @@ import React from "react";
 import { Element } from "react-scroll";
 
 import Layout from "../layout";
-import Header from "../components/headers/page-one";
+import Header from "../components/headers/header";
 import Separator from "../components/separator";
 import Feature from "../components/feature";
 import ContainerCss from "../styles/container.scss";
 import PageCss from "../styles/pages/page-one.scss";
 import Candy from "../static/svgs/candy.svg";
+import Rocket from "../static/svgs/rocket.svg";
 
 export default () => (
   <Layout>
-    <Header />
+    <Header
+      title={["Donec orci lectus", <br />, "Mauris sollic libero"]}
+      icon={<Rocket />}
+    >
+      Suspendisse feugiat. Nam pretium turpis et arcu. Suspendisse pulvinar,
+      augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque
+      velit pede quis nunc. Fusce risus nisl, viverra et, tempor et, pretium in,
+      sapien. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      quis gravida magna mi a libero.
+    </Header>
     <main>
       <Element name="main_section" />
       <section>
