@@ -1,0 +1,251 @@
+@import "../variables";
+@import "../rem";
+
+.main {
+  position: relative;
+}
+
+.white_background {
+  position: absolute;
+  top: rem(-200px);
+  background-color: #fff;
+  width: 100%;
+  height: rem(380px);
+  transform: skewY(-12deg);
+  z-index: -2;
+}
+
+.contact_section {
+  @media (max-width: 767px) {
+    padding-top: rem(30px);
+  }
+}
+
+.gradient_background {
+  background: linear-gradient(90deg, #9a73da, #3b0861);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -5;
+}
+
+.form_column {
+  flex: 0 0 100%;
+  @media (min-width: 768px) {
+    flex: 6;
+  }
+  padding-bottom: 0;
+}
+
+.form_container {
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  background: #fff;
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  form {
+    padding: rem(20px 25px);
+  }
+}
+
+.form_row {
+  display: flex;
+  border-bottom: none;
+  padding: rem(4px 0);
+  max-width: rem(600px);
+
+  @media (max-width: 449px) {
+    flex-wrap: wrap;
+  }
+
+  & > label {
+    color: #424770;
+    font-size: rem(16px);
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: rem(26px);
+    margin-right: rem(20px);
+    align-self: center;
+    flex: 100%;
+    @media (min-width: 450px) {
+      flex: 32%;
+    }
+    text-transform: none;
+    &.contains_summary {
+      align-self: flex-start;
+      padding-top: rem(7px);
+    }
+  }
+  input,
+  textarea {
+    background-color: #f6f9fc;
+    padding: rem(8px 20px 8px 13px);
+    flex: 100%;
+    @media (min-width: 450px) {
+      flex: 68%;
+    }
+    width: auto;
+    border: none;
+    border-radius: rem(3px);
+    font-size: rem(16px);
+    transition: background-color 0.2s;
+  }
+  textarea {
+    min-height: rem(130px);
+  }
+}
+
+.submit_row {
+  padding: 12px 0 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  svg {
+    float: left;
+    width: rem(15px);
+    margin-right: rem(10px);
+    margin-top: rem(1px);
+  }
+}
+
+.form_section {
+  padding: 0 3%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.left_column {
+  flex: 0 0 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #3f0a64;
+  padding: rem(35px);
+  @media (max-width: 767px) {
+    margin-top: rem(60px);
+  }
+
+  @media (min-width: 768px) {
+    flex: 2;
+  }
+  span {
+    opacity: 0.77;
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+  h3 {
+    color: #fff;
+    font-size: rem(16px);
+    font-weight: 800;
+  }
+}
+
+.service_area {
+  text-align: center;
+  p {
+    opacity: 0.77;
+    color: #fff;
+    font-weight: 800;
+    font-size: rem(14px);
+    margin-top: rem(5px);
+    margin-bottom: rem(20px);
+  }
+}
+
+.service_area_svg {
+  display: table;
+  & > div {
+    text-align: center;
+    height: rem(80px);
+
+    @media (max-width: 499px) {
+      height: rem(50px);
+    }
+
+    @media (min-width: 768px) {
+      height: rem(50px);
+    }
+
+    @media (min-width: 992px) {
+      height: rem(80px);
+    }
+    vertical-align: bottom;
+    display: table-cell;
+  }
+  svg {
+    color: #fff;
+    max-height: rem(80px);
+
+    @media (max-width: 499px) {
+      max-height: rem(50px);
+    }
+
+    @media (min-width: 768px) {
+      max-height: rem(50px);
+    }
+
+    @media (min-width: 992px) {
+      max-height: rem(80px);
+    }
+    width: 100%;
+  }
+}
+
+.contact_info {
+  margin-top: rem(10px);
+  & > div {
+    display: flex;
+  }
+}
+
+.icon {
+  .contact_info & {
+    flex: 0 0 20px;
+    align-self: center;
+  }
+  svg {
+    color: #fff;
+  }
+}
+
+.info {
+  color: #fff;
+  .contact_info & {
+    flex: 0 0 calc(100% - 20px);
+    align-self: center;
+    padding-left: rem(10px);
+  }
+}
+
+.contact_info_text {
+  color: #fff;
+  margin-top: rem(80px);
+  text-align: center;
+  opacity: 0.7;
+  font-size: rem(14px);
+}
+
+.form_msg {
+  font-size: rem(12px);
+  margin-top: rem(10px);
+}
+
+.msg_success {
+  color: green;
+}
+
+.msg_error {
+  color: red;
+}

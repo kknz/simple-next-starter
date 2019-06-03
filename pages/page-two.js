@@ -5,7 +5,7 @@ import Layout from "../layout";
 import Header from "../components/headers/header";
 import Portfolio from "../components/portfolio";
 import ContainerCss from "../styles/container.scss";
-import Pagecss from "../styles/components/portfolio.scss";
+import PageCss from "../styles/components/portfolio.scss";
 import Summer from "../static/svgs/summer.svg";
 
 export default () => (
@@ -26,7 +26,7 @@ export default () => (
         <div className={ContainerCss.container}>
           <div className={ContainerCss.row}>
             <div className={ContainerCss.col_12}>
-              <div className={Pagecss.portfolios}>
+              <div className={PageCss.portfolios}>
                 <Portfolio
                   src="/static/images/portfolio-one.jpg"
                   alt="Portfolio One"

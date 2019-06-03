@@ -1,6 +1,6 @@
 import React from "react";
 
-import container from "../../styles/container.scss";
+import ContainerCss from "../../styles/container.scss";
 import css from "../../styles/headers/home.scss";
 import PatternOne from "../../static/svgs/pattern-one.svg";
 import PatternTwo from "../../static/svgs/pattern-two.svg";
@@ -13,7 +13,7 @@ export default () => (
     <div className={css.pattern_two}>
       <PatternTwo />
     </div>
-    <div className={`${container.container} ${css.hero_container}`}>
+    <div className={`${ContainerCss.container} ${css.hero_container}`}>
       <div className={css.hero}>
         <div className={css.hero_text}>
           <h1>

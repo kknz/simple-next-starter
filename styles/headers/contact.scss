@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../rem";
+
+.header {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-top: rem(102px);
+  min-height: rem(200px);
+}
+
+.promo_container {
+  text-align: center;
+}
+
+.promo {
+  padding: rem(10px 15px);
+  margin: 0 auto;
+}
+
+.promo_text {
+  h1 {
+    font-weight: 500;
+    font-size: rem(26px);
+    line-height: rem(40px);
+    @media (min-width: 768px) {
+      font-size: rem(36px);
+      line-height: rem(50px);
+    }
+  }
+  h4 {
+    color: $text-secondary-color;
+    @media (max-width: 767px) {
+      font-size: rem(14px);
+    }
+  }
+}
