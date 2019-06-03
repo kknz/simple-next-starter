@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import NextSeo from "next-seo";
 
 import Layout from "../layout";
 import Header from "../components/headers/header";
@@ -12,6 +13,20 @@ import Rocket from "../static/svgs/rocket.svg";
 
 export default () => (
   <Layout>
+    <NextSeo
+      config={{
+        title: "Page one - Simple NEXT Starter",
+        description:
+          "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis.",
+        canonical: "https://simple-next-starter.now.sh/page-one",
+        openGraph: {
+          url: "https://simple-next-starter.now.sh/page-one",
+          title: "Page one - Simple NEXT Starter",
+          description:
+            "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis."
+        }
+      }}
+    />
     <Header
       title={["Donec orci lectus", <br />, "Mauris sollic libero"]}
       icon={<Rocket />}

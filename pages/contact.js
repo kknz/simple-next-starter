@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NextSeo from "next-seo";
 import { sendMail, emailValidator } from "../functions";
 
 import Layout from "../layout";
@@ -76,6 +77,20 @@ export default class extends Component {
   render() {
     return (
       <Layout>
+        <NextSeo
+          config={{
+            title: "Contact - Simple NEXT Starter",
+            description:
+              "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis.",
+            canonical: "https://simple-next-starter.now.sh/contact",
+            openGraph: {
+              url: "https://simple-next-starter.now.sh/contact",
+              title: "Contact - Simple NEXT Starter",
+              description:
+                "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis."
+            }
+          }}
+        />
         <Header />
         <main>
           <div className={PageCss.white_background} />

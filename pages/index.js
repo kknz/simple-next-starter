@@ -1,4 +1,5 @@
 import React from "react";
+import NextSeo from "next-seo";
 
 import Layout from "../layout";
 import Header from "../components/headers/home";
@@ -14,6 +15,20 @@ import ReactSVG from "../static/svgs/react.svg";
 
 export default () => (
   <Layout className={NavCss.home}>
+    <NextSeo
+      config={{
+        title: "Simple NEXT Starter",
+        description:
+          "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis.",
+        canonical: "https://simple-next-starter.now.sh",
+        openGraph: {
+          url: "https://simple-next-starter.now.sh",
+          title: "Simple NEXT Starter",
+          description:
+            "Praesent egestas neque eu enim. Praesent ut ligula non mi varius sagittis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Aliquam lobortis."
+        }
+      }}
+    />
     <Header />
     <main>
       <section>

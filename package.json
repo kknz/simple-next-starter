@@ -10,6 +10,7 @@
     "autoprefixer": "^9.5.1",
     "cssnano": "^4.1.10",
     "next": "8.1.0",
+    "next-seo": "^1.11.2",
     "node-sass": "^4.12.0",
     "nprogress": "^0.2.0",
     "react": "16.8.6",
