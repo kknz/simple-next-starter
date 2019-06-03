@@ -25,10 +25,7 @@ export default () => (
         }
       }}
     />
-    <Header
-      title={["Nam ipsum risus", <br />, "Rutrum vitaes"]}
-      icon={<Summer />}
-    >
+    <Header title="Nam ipsum risus Rutrum vitaes" icon={<Summer />}>
       Nunc sed turpis. Vestibulum dapibus nunc ac augue. Phasellus blandit leo
       ut odio. Phasellus nec sem in justo pellentesque facilisis. Ut id nisl
       quis enim dignissim sagittis. Vivamus aliquet elit ac nisl. Aenean tellus

@@ -27,10 +27,7 @@ export default () => (
         }
       }}
     />
-    <Header
-      title={["Donec orci lectus", <br />, "Mauris sollic libero"]}
-      icon={<Rocket />}
-    >
+    <Header title="Donec orci lectus Mauris sollic libero" icon={<Rocket />}>
       Suspendisse feugiat. Nam pretium turpis et arcu. Suspendisse pulvinar,
       augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque
       velit pede quis nunc. Fusce risus nisl, viverra et, tempor et, pretium in,
