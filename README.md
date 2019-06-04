@@ -7,6 +7,8 @@ Demo: https://simple-next-starter.now.sh
 - Next.js
 - Next SEO
 - Sass
+- SVG
+- NProgress
 - [now](https://zeit.co/now)
 
 ## Available Scripts
